@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Comment Sentiment",
+  "version": "1.0.0",
+  "description": "Label loaded YouTube comments using your local sentiment API.",
+  "host_permissions": [
+    "http://127.0.0.1:5058/*",
+    "http://localhost:5058/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

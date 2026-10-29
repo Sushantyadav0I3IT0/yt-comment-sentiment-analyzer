@@ -1,0 +1,72 @@
+#yt-sentiment-panel {
+  position: fixed;
+  z-index: 2147483647;
+  right: 20px;
+  bottom: 20px;
+  width: 270px;
+  padding: 14px;
+  border: 1px solid #444;
+  border-radius: 12px;
+  background: #181818;
+  color: #fff;
+  box-shadow: 0 4px 18px #0008;
+  font: 14px/1.4 Arial, sans-serif;
+}
+
+.yt-sentiment-heading {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#yt-sentiment-analyze {
+  width: 100%;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 18px;
+  background: #3ea6ff;
+  color: #0f0f0f;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+#yt-sentiment-analyze:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+#yt-sentiment-status {
+  margin-top: 9px;
+  color: #ccc;
+  overflow-wrap: anywhere;
+}
+
+#yt-sentiment-summary {
+  margin-top: 8px;
+  color: #fff;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.yt-sentiment-badge {
+  display: inline-block;
+  margin: 4px 0 4px 8px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: #111;
+  font: 600 12px/1.5 Arial, sans-serif;
+  vertical-align: middle;
+}
+
+.yt-sentiment-badge.positive {
+  background: #8de1a2;
+}
+
+.yt-sentiment-badge.neutral {
+  background: #ddd;
+}
+
+.yt-sentiment-badge.negative {
+  background: #ff9a9a;
+}
